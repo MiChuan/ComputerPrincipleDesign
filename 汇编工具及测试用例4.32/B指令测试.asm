@@ -13,7 +13,7 @@ addi $s3,$zero,3
 
 Next1:
  add    $a0,$0,$s0       # display $s0
- addi   $v0,$0,1         # system call for display
+ addi   $v0,$0,34         # system call for display
  syscall                 # syscall include 2 hidden operand: $v0,$a0£¬may cause data hazzard
 
  bne $s1, $s1, Next2
