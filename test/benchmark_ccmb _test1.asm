@@ -300,10 +300,16 @@ sort_next:
 # insert your ccmb benchmark program here!!!
 #############################################
 
+#j benchmark_start       #delete this instruction for ccmb bencmark
 #C1 instruction benchmark
 #SUBU测试  循环减1   revise date:2018/3/12 tiger
 #依次输出  0x00000010 0x0000000f 0x0000000e 0x0000000d 0x0000000c 0x0000000b 0x0000000a 0x00000009 0x00000008 0x00000007 0x00000006 0x00000005 0x00000004 0x00000003 0x00000002 0x00000001 0x00000000 0xffffffff 0xfffffffe 0xfffffffd 0xfffffffc 0xfffffffb 0xfffffffa 0xfffffff9 0xfffffff8 0xfffffff7 0xfffffff6 0xfffffff5 0xfffffff4 0xfffffff3 0xfffffff2 0xfffffff1 0xfffffff0
 .text
+
+nop
+nop
+nop
+nop
 
 addi $t0,$zero,1     #
 addi $s1,$zero, 0x10     #
@@ -334,6 +340,10 @@ syscall                  # we are out of here.
 #依次输出 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777 0xffff8888 0x00007777
 
 .text
+nop
+nop
+nop
+nop
 
 addi $t0,$zero,-1     #
 addi $s1,$zero, 0x7777     #
@@ -360,6 +370,10 @@ syscall                  # we are out of here.
 #LBU 测试    revise date:2018/3/12 tiger#
 #依次输出   0x00000081 0x00000082 0x00000083 0x00000084 0x00000085 0x00000086 0x00000087 0x00000088 0x00000089 0x0000008a 0x0000008b 0x0000008c 0x0000008d 0x0000008e 0x0000008f 0x00000090 0x00000091 0x00000092 0x00000093 0x00000094 0x00000095 0x00000096 0x00000097 0x00000098 0x00000099 0x0000009a 0x0000009b 0x0000009c 0x0000009d 0x0000009e 0x0000009f 0x000000a0
 .text
+nop
+nop
+nop
+nop
 
 addi $t1,$zero,0     #init_addr 
 addi $t3,$zero,16     #counter
@@ -400,6 +414,11 @@ syscall                  # we are out of here.
 #bltz 测试    小于0跳转   累加运算，从负数开始向零运算 revise date:2018/3/12 tiger  
 #依次输出0xfffffff1 0xfffffff2 0xfffffff3 0xfffffff4 0xfffffff5 0xfffffff6 0xfffffff7 0xfffffff8 0xfffffff9 0xfffffffa 0xfffffffb 0xfffffffc 0xfffffffd 0xfffffffe 0xffffffff
 .text
+nop
+nop
+nop
+nop
+
 addi $s1,$zero,-15       #初始值
 bltz_branch:
 add $a0,$0,$s1          
