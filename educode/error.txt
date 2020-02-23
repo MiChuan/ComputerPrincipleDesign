@@ -1,0 +1,5 @@
+Cnt      IFPC     IDPC     EXPC     MPC      WBPC     PcErr     Werr      LED          RegW  RDin         MemW  MDin
+0250     3150     0000     0000     3168     0000     10000     00000     fffffff1     0     00000000     0     00000000    Error£¡
+
+Cnt      IFPC     IDPC     EXPC     MPC      WBPC     PcErr     Werr      LED          RegW  RDin         MemW  MDin
+0172     3150     0000     0000     3168     3164     10000     00000     fffffff1     1     00000007     0     00000000    Error£¡
