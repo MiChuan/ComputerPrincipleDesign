@@ -1,0 +1,2 @@
+CLKs     PC       IR           PCerr  Werr      LED          RegW  RDin         MemW  MDin
+0004     30b0     23bd0004     00     00100     00000000     1     000007d4     0     00000000    Error£¡
